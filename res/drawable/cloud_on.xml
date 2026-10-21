@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="24.0dip"
+        android:width="24.0dip"
+        android:viewportWidth="25.0"
+        android:viewportHeight="25.0">
+        <bitmap
+            android:src="@drawable/ic_cloud_on" />
+    </item>
+</layer-list>

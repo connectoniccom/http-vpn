@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/action_assistant_settings"
+        android:title="@string/auto_ping_configure_assistant"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_copy_logs"
+        android:title="@string/ui_copy_logs_1758755b"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_clear_logs"
+        android:title="@string/ui_clear_logs_532ffc7a"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_share_logs"
+        android:title="@string/ui_share_logs_873b2384"
+        app:showAsAction="never" />
+</menu>

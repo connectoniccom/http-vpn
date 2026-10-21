@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/config_action_edit"
+        android:title="@string/ui_edit_config" />
+    <item
+        android:id="@id/config_action_duplicate"
+        android:title="@string/ui_duplicate" />
+    <item
+        android:id="@id/config_action_export"
+        android:title="@string/ui_export_config" />
+    <item
+        android:id="@id/config_action_update"
+        android:title="@string/check_update" />
+    <item
+        android:id="@id/config_action_remove"
+        android:title="@string/ui_remove" />
+</menu>

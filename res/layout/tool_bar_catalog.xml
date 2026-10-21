@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:elevation="0.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center_vertical"
+        android:id="@id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/catalog_toolbar_height"
+        app:elevation="0.0dip"
+        app:subtitleTextColor="@color/white"
+        app:titleTextColor="@color/white" />
+</com.google.android.material.appbar.AppBarLayout>

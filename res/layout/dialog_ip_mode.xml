@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clipToOutline="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/tv_title"
+        android:background="@drawable/bg_dialog_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:paddingStart="16.0dip"
+        android:paddingEnd="8.0dip">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_ip_mode"
+            android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/btn_reset"
+            android:text="@string/settings_reset_action"
+            style="@style/DialogActionButton.Tonal" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/btn_save"
+            android:text="@string/settings_save"
+            style="@style/DialogActionButton.Primary" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="12.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16.0dip"
+        android:paddingEnd="16.0dip">
+        <RadioGroup
+            android:orientation="vertical"
+            android:id="@id/ip_mode_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="12.0sp"
+            android:textColor="?android:textColorSecondary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:text="@string/settings_ip_mode_server_requirement"
+            android:paddingStart="4.0dip"
+            android:paddingEnd="4.0dip" />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@id/spn_ipv6_dns_provider"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:drawSelectorOnTop="true"
+            android:spinnerMode="dropdown" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="12.0sp"
+            android:textColor="?android:textColorSecondary"
+            android:id="@id/tv_ipv6_dns_info"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:paddingStart="4.0dip"
+            android:paddingEnd="4.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ipv6_dns_fields"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/til_ipv6_dns_primary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:hint="@string/settings_ipv6_dns_primary"
+                style="@style/Widget.App.TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="12.0sp"
+                    android:id="@id/et_ipv6_dns_primary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/til_ipv6_dns_secondary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:hint="@string/settings_ipv6_dns_secondary"
+                style="@style/Widget.App.TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="12.0sp"
+                    android:id="@id/et_ipv6_dns_secondary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

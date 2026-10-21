@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/global_search_root"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/global_search_app_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0.0dip"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/global_search_toolbar"
+            android:background="@color/colorPrimary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            app:elevation="0.0dip"
+            app:theme="@style/ToolbarSearchTheme"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/global_search_body"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/global_search_app_bar">
+        <androidx.cardview.widget.CardView
+            android:id="@id/global_search_field_card"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:layout_marginStart="12.0dip"
+            android:layout_marginEnd="12.0dip"
+            app:cardCornerRadius="12.0dip"
+            app:cardElevation="2.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.SearchView
+                android:id="@id/global_search_view"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionSearch"
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/global_search_hint" />
+        </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="13.0sp"
+            android:id="@id/global_search_status"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/global_search_intro"
+            android:maxLines="3"
+            android:lineSpacingExtra="1.0dip"
+            android:layout_marginStart="20.0dip"
+            android:layout_marginEnd="20.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/global_search_field_card" />
+        <FrameLayout
+            android:id="@id/global_search_content"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_marginTop="8.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/global_search_status">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/global_search_results"
+                android:paddingTop="4.0dip"
+                android:paddingBottom="16.0dip"
+                android:scrollbars="vertical"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="15.0sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/global_search_empty"
+                android:paddingTop="24.0dip"
+                android:paddingBottom="24.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/global_search_start_typing"
+                android:lineSpacingExtra="2.0dip"
+                android:paddingStart="32.0dip"
+                android:paddingEnd="32.0dip" />
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@id/global_search_loading"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/global_search_loading" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

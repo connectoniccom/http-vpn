@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-05",
+  "games": [
+    {
+      "id": "pubg-mobile",
+      "name": "PUBG MOBILE",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.tencent.ig",
+            "com.pubg.krmobile",
+            "com.vng.pubgmobile",
+            "com.rekoo.pubgm"
+          ]
+        }
+      }
+    },
+    {
+      "id": "battlegrounds-mobile-india",
+      "name": "Battlegrounds Mobile India",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.pubg.imobile"
+          ]
+        }
+      }
+    },
+    {
+      "id": "new-state-mobile",
+      "name": "NEW STATE Mobile",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.pubg.newstate"
+          ]
+        }
+      }
+    },
+    {
+      "id": "call-of-duty-mobile",
+      "name": "Call of Duty: Mobile",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.activision.callofduty.shooter",
+            "com.garena.game.codm"
+          ]
+        }
+      }
+    },
+    {
+      "id": "free-fire",
+      "name": "Free Fire",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.dts.freefireth"
+          ]
+        }
+      }
+    },
+    {
+      "id": "free-fire-max",
+      "name": "Free Fire MAX",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.dts.freefiremax"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mobile-legends-bang-bang",
+      "name": "Mobile Legends: Bang Bang",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.mobile.legends"
+          ]
+        }
+      }
+    },
+    {
+      "id": "honor-of-kings",
+      "name": "Honor of Kings",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.levelinfinite.sgameGlobal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "league-of-legends-wild-rift",
+      "name": "League of Legends: Wild Rift",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.riotgames.league.wildrift"
+          ]
+        }
+      }
+    },
+    {
+      "id": "teamfight-tactics",
+      "name": "Teamfight Tactics",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.riotgames.league.teamfighttactics"
+          ]
+        }
+      }
+    },
+    {
+      "id": "brawl-stars",
+      "name": "Brawl Stars",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.supercell.brawlstars"
+          ]
+        }
+      }
+    },
+    {
+      "id": "clash-of-clans",
+      "name": "Clash of Clans",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.supercell.clashofclans"
+          ]
+        }
+      }
+    },
+    {
+      "id": "clash-royale",
+      "name": "Clash Royale",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.supercell.clashroyale"
+          ]
+        }
+      }
+    },
+    {
+      "id": "roblox",
+      "name": "Roblox",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.roblox.client"
+          ]
+        }
+      }
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.mojang.minecraftpe"
+          ]
+        }
+      }
+    },
+    {
+      "id": "fortnite",
+      "name": "Fortnite",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.epicgames.fortnite"
+          ]
+        }
+      }
+    },
+    {
+      "id": "genshin-impact",
+      "name": "Genshin Impact",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.miHoYo.GenshinImpact"
+          ]
+        }
+      }
+    },
+    {
+      "id": "honkai-star-rail",
+      "name": "Honkai: Star Rail",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.HoYoverse.hkrpgoversea"
+          ]
+        }
+      }
+    },
+    {
+      "id": "zenless-zone-zero",
+      "name": "Zenless Zone Zero",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.HoYoverse.Nap"
+          ]
+        }
+      }
+    },
+    {
+      "id": "wuthering-waves",
+      "name": "Wuthering Waves",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.kurogame.wutheringwaves.global"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pokemon-go",
+      "name": "Pokémon GO",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.nianticlabs.pokemongo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pokemon-unite",
+      "name": "Pokémon UNITE",
+      "platforms": {
+        "android": {
+          "packages": [
+            "jp.pokemon.pokemonunite"
+          ]
+        }
+      }
+    },
+    {
+      "id": "efootball",
+      "name": "eFootball",
+      "platforms": {
+        "android": {
+          "packages": [
+            "jp.konami.pesam"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ea-sports-fc-mobile",
+      "name": "EA SPORTS FC Mobile",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.ea.gp.fifamobile"
+          ]
+        }
+      }
+    },
+    {
+      "id": "arena-breakout",
+      "name": "Arena Breakout",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.proximabeta.mf.uamo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "blood-strike",
+      "name": "Blood Strike",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.netease.newspike"
+          ]
+        }
+      }
+    },
+    {
+      "id": "delta-force",
+      "name": "Delta Force",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.proxima.dfm",
+            "com.garena.game.df"
+          ]
+        }
+      }
+    },
+    {
+      "id": "standoff-2",
+      "name": "Standoff 2",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.axlebolt.standoff2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "stumble-guys",
+      "name": "Stumble Guys",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.kitkagames.fallbuddies"
+          ]
+        }
+      }
+    },
+    {
+      "id": "among-us",
+      "name": "Among Us",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.innersloth.spacemafia"
+          ]
+        }
+      }
+    },
+    {
+      "id": "diablo-immortal",
+      "name": "Diablo Immortal",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.blizzard.diablo.immortal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "asphalt-legends",
+      "name": "Asphalt Legends",
+      "platforms": {
+        "android": {
+          "packages": [
+            "com.gameloft.android.ANMP.GloftA9HM"
+          ]
+        }
+      }
+    }
+  ]
+}
+

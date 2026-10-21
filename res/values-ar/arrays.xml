@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>لا</item>
+        <item>كامل</item>
+        <item>تنزيل فقط</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>عادي</item>
+        <item>الحقن في البداية</item>
+        <item>الحقن في النهاية</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>النفق المدمج IPv4/IPv6</item>
+        <item>نفق IPv4 فقط</item>
+        <item>لا تفضيل</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>رمادي أردوازي</item>
+        <item>أحمر</item>
+        <item>وردي</item>
+        <item>بنفسجي</item>
+        <item>بنفسجي داكن</item>
+        <item>نيلي</item>
+        <item>أزرق</item>
+        <item>أزرق فاتح</item>
+        <item>سماوي</item>
+        <item>أزرق مخضر</item>
+        <item>أخضر</item>
+        <item>أخضر فاتح</item>
+        <item>كهرماني</item>
+        <item>برتقالي</item>
+        <item>برتقالي داكن</item>
+        <item>بني</item>
+        <item>رمادي مزرق</item>
+        <item>رمادي</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>الافتراضي</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>معطل</item>
+        <item>الملف الشخصي الافتراضي</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>الافتراضي</item>
+        <item>فايرفوكس</item>
+        <item>كروم</item>
+        <item>أوبرا ميني</item>
+        <item>بوفين</item>
+        <item>سفاري</item>
+        <item>متصفح UC</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>V2Ray الافتراضي</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>تكيّفي</item>
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="auto_reconnect_interval_hours">
+        <item quantity="other">%1$d Stunden</item>
+        <item quantity="one">%1$d Stunde</item>
+    </plurals>
+    <plurals name="auto_reconnect_interval_minutes">
+        <item quantity="other">%1$d Minuten</item>
+        <item quantity="one">%1$d Minute</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">vor %1$d Tagen</item>
+        <item quantity="one">vor %1$d Tag</item>
+    </plurals>
+    <plurals name="global_search_result_count">
+        <item quantity="other">%d Ergebnisse</item>
+        <item quantity="one">%d Ergebnis</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">vor %1$d Stunden</item>
+        <item quantity="one">vor %1$d Stunde</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">vor %1$d Minuten</item>
+        <item quantity="one">vor %1$d Minute</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d neue Benachrichtigungen</item>
+        <item quantity="one">%d neue Benachrichtigung</item>
+    </plurals>
+    <plurals name="settings_apps_filter_active_summary">
+        <item quantity="other">Aktiviert • Filtermodus • %1$d-Apps ausgewählt</item>
+        <item quantity="one">Aktiviert • Filtermodus • %1$d-App ausgewählt</item>
+    </plurals>
+    <plurals name="settings_apps_filter_bypass_summary">
+        <item quantity="other">Aktiviert • Umgehungsmodus • %1$d Apps ausgewählt</item>
+        <item quantity="one">Aktiviert • Umgehungsmodus • %1$d App ausgewählt</item>
+    </plurals>
+    <plurals name="settings_reconnection_attempts_summary">
+        <item quantity="other">%1$d Versuche</item>
+        <item quantity="one">%1$d Versuch</item>
+    </plurals>
+</resources>

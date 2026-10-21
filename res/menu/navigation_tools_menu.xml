@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_dns_changer"
+        android:id="@id/nav_dns_changer"
+        android:orderInCategory="4000"
+        android:title="@string/tool_dns_changer_title" />
+    <item
+        android:icon="@drawable/ic_speedtest"
+        android:id="@id/nav_speedtest"
+        android:orderInCategory="8000"
+        android:title="@string/tool_speed_test_title" />
+    <item
+        android:icon="@drawable/ic_wifi_tethering"
+        android:id="@id/item_tethering"
+        android:orderInCategory="12000"
+        android:title="@string/global_search_hotspot" />
+    <item
+        android:icon="@drawable/ic_tool_response_checker"
+        android:id="@id/nav_response_checker"
+        android:orderInCategory="16000"
+        android:title="@string/tool_response_checker_title" />
+    <item
+        android:icon="@drawable/ic_search_refresh"
+        android:id="@id/nav_ip_hunter"
+        android:orderInCategory="20000"
+        android:title="@string/tool_ip_finder_title" />
+    <item
+        android:icon="@drawable/ic_tool_network_info"
+        android:id="@id/nav_tool_network_info"
+        android:orderInCategory="24000"
+        android:title="@string/tool_network_info_title" />
+    <item
+        android:icon="@drawable/ic_tool_port_checker"
+        android:id="@id/nav_tool_port_checker"
+        android:orderInCategory="28000"
+        android:title="@string/tool_port_checker_title" />
+    <item
+        android:icon="@drawable/ic_tool_ip_checker"
+        android:id="@id/nav_tool_ip_checker"
+        android:orderInCategory="32000"
+        android:title="@string/tool_ip_checker_title" />
+    <item
+        android:icon="@drawable/ic_tool_host_resolver"
+        android:id="@id/nav_tool_host_resolver"
+        android:orderInCategory="36000"
+        android:title="@string/tool_host_resolver_title" />
+    <item
+        android:icon="@drawable/ic_tool_pinger"
+        android:id="@id/nav_tool_pinger"
+        android:orderInCategory="40000"
+        android:title="@string/tool_pinger_title" />
+    <item
+        android:icon="@drawable/ic_tool_dns_lookup"
+        android:id="@id/nav_tool_dns_lookup"
+        android:orderInCategory="44000"
+        android:title="@string/tool_dns_lookup_title" />
+    <item
+        android:icon="@drawable/ic_tool_cidr_calculator"
+        android:id="@id/nav_tool_cidr_calculator"
+        android:orderInCategory="48000"
+        android:title="@string/tool_cidr_calculator_title" />
+</menu>

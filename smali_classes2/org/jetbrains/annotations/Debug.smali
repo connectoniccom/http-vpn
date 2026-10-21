@@ -1,0 +1,32 @@
+.class public final Lorg/jetbrains/annotations/Debug;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/jetbrains/annotations/Debug$Renderer;
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    new-instance p0, Ljava/lang/AssertionError;
+
+    .line 6
+    const-string v0, "Debug should not be instantiated"
+
+    .line 8
+    invoke-direct {p0, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+
+    .line 11
+    throw p0
+.end method

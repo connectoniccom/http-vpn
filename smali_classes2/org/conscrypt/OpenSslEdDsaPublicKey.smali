@@ -1,0 +1,516 @@
+.class public Lorg/conscrypt/OpenSslEdDsaPublicKey;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+# interfaces
+.implements Ljava/security/PublicKey;
+.implements Lorg/conscrypt/OpenSSLKeyHolder;
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x64c7113d078e42dL
+
+
+# instance fields
+.field private transient key:Lorg/conscrypt/OpenSSLKey;
+
+.field private publicKeyBytes:[B
+
+
+# direct methods
+.method public constructor <init>(Ljava/security/spec/EncodedKeySpec;)V
+    .registers 4
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->publicKeyBytes:[B
+
+    .line 7
+    :try_start_0
+    invoke-virtual {p1}, Ljava/security/spec/EncodedKeySpec;->getFormat()Ljava/lang/String;
+
+    .line 10
+    move-result-object v0
+
+    .line 11
+    const-string v1, "raw"
+
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    .line 16
+    move-result v0
+
+    .line 17
+    if-eqz v0, :cond_0
+
+    .line 19
+    invoke-virtual {p1}, Ljava/security/spec/EncodedKeySpec;->getEncoded()[B
+
+    .line 22
+    move-result-object p1
+
+    .line 23
+    invoke-static {p1}, Lorg/conscrypt/OpenSslEdDsaPublicKey;->getOpenSslKeyFromRaw([B)Lorg/conscrypt/OpenSSLKey;
+
+    .line 26
+    move-result-object p1
+
+    .line 27
+    iput-object p1, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+
+    .line 29
+    return-void
+
+    .line 30
+    :cond_0
+    invoke-virtual {p1}, Ljava/security/spec/EncodedKeySpec;->getFormat()Ljava/lang/String;
+
+    .line 33
+    move-result-object v0
+
+    .line 34
+    const-string v1, "X.509"
+
+    .line 36
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 39
+    move-result v0
+
+    .line 40
+    if-eqz v0, :cond_1
+
+    .line 42
+    invoke-virtual {p1}, Ljava/security/spec/EncodedKeySpec;->getEncoded()[B
+
+    .line 45
+    move-result-object p1
+
+    .line 46
+    invoke-static {p1}, Lorg/conscrypt/OpenSslEdDsaPublicKey;->getOpenSslKeyFromX509([B)Lorg/conscrypt/OpenSSLKey;
+
+    .line 49
+    move-result-object p1
+
+    .line 50
+    iput-object p1, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+
+    .line 52
+    return-void
+
+    .line 53
+    :cond_1
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
+
+    .line 55
+    const-string p1, "Encoding must be in X.509 or raw format"
+
+    .line 57
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+
+    .line 60
+    throw p0
+    :try_end_0
+    .catch Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 61
+    :catch_0
+    move-exception p0
+
+    .line 62
+    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
+
+    .line 64
+    invoke-direct {p1, p0}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 67
+    throw p1
+.end method
+
+.method public constructor <init>([B)V
+    .registers 3
+
+    .line 68
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 69
+    iput-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->publicKeyBytes:[B
+
+    .line 70
+    :try_start_0
+    invoke-static {p1}, Lorg/conscrypt/OpenSslEdDsaPublicKey;->getOpenSslKeyFromRaw([B)Lorg/conscrypt/OpenSSLKey;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    :try_end_0
+    .catch Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p0
+
+    .line 71
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
+
+    throw p1
+.end method
+
+.method private static getOpenSslKeyFromRaw([B)Lorg/conscrypt/OpenSSLKey;
+    .registers 4
+
+    .line 1
+    new-instance v0, Lorg/conscrypt/OpenSSLKey;
+
+    .line 3
+    const/16 v1, 0x3b5
+
+    .line 5
+    invoke-static {v1, p0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_from_raw_public_key(I[B)J
+
+    .line 8
+    move-result-wide v1
+
+    .line 9
+    invoke-direct {v0, v1, v2}, Lorg/conscrypt/OpenSSLKey;-><init>(J)V
+
+    .line 12
+    return-object v0
+.end method
+
+.method private static getOpenSslKeyFromX509([B)Lorg/conscrypt/OpenSSLKey;
+    .registers 4
+
+    .line 1
+    new-instance v0, Lorg/conscrypt/OpenSSLKey;
+
+    .line 3
+    const/16 v1, 0x3b5
+
+    .line 5
+    filled-new-array {v1}, [I
+
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-static {p0, v1}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_from_subject_public_key_info([B[I)J
+
+    .line 12
+    move-result-wide v1
+
+    .line 13
+    invoke-direct {v0, v1, v2}, Lorg/conscrypt/OpenSSLKey;-><init>(J)V
+
+    .line 16
+    return-object v0
+.end method
+
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .registers 3
+
+    .line 1
+    invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
+
+    .line 4
+    :try_start_0
+    iget-object p1, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->publicKeyBytes:[B
+
+    .line 6
+    invoke-static {p1}, Lorg/conscrypt/OpenSslEdDsaPublicKey;->getOpenSslKeyFromRaw([B)Lorg/conscrypt/OpenSSLKey;
+
+    .line 9
+    move-result-object p1
+
+    .line 10
+    iput-object p1, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    :try_end_0
+    .catch Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 12
+    return-void
+
+    .line 13
+    :catch_0
+    move-exception p0
+
+    .line 14
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 16
+    const-string v0, "Parsing raw key failed"
+
+    .line 18
+    invoke-direct {p1, v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 21
+    throw p1
+.end method
+
+.method private writeObject(Ljava/io/ObjectOutputStream;)V
+    .registers 3
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSslEdDsaPublicKey;->getRaw()[B
+
+    .line 5
+    move-result-object v0
+
+    .line 6
+    iput-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->publicKeyBytes:[B
+
+    .line 8
+    invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
+
+    .line 11
+    const/4 p1, 0x0
+
+    .line 12
+    iput-object p1, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->publicKeyBytes:[B
+
+    .line 14
+    monitor-exit p0
+
+    .line 15
+    return-void
+
+    .line 16
+    :catchall_0
+    move-exception p1
+
+    .line 17
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 18
+    throw p1
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_2
+
+    .line 6
+    if-ne p0, p1, :cond_0
+
+    .line 8
+    const/4 p0, 0x1
+
+    .line 9
+    return p0
+
+    .line 10
+    :cond_0
+    instance-of v0, p1, Lorg/conscrypt/OpenSslEdDsaPublicKey;
+
+    .line 12
+    if-nez v0, :cond_1
+
+    .line 14
+    return v1
+
+    .line 15
+    :cond_1
+    check-cast p1, Lorg/conscrypt/OpenSslEdDsaPublicKey;
+
+    .line 17
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSslEdDsaPublicKey;->getRaw()[B
+
+    .line 20
+    move-result-object p0
+
+    .line 21
+    invoke-virtual {p1}, Lorg/conscrypt/OpenSslEdDsaPublicKey;->getRaw()[B
+
+    .line 24
+    move-result-object p1
+
+    .line 25
+    invoke-static {p0, p1}, Ljava/util/Arrays;->equals([B[B)Z
+
+    .line 28
+    move-result p0
+
+    .line 29
+    return p0
+
+    .line 30
+    :cond_2
+    const-string p0, "key is destroyed"
+
+    .line 32
+    invoke-static {p0}, Lg;->g(Ljava/lang/String;)V
+
+    .line 35
+    return v1
+.end method
+
+.method public getAlgorithm()Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    const-string p0, "1.3.101.112"
+
+    .line 3
+    return-object p0
+.end method
+
+.method public getEncoded()[B
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 5
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    const-string p0, "key is destroyed"
+
+    .line 16
+    invoke-static {p0}, Lg;->g(Ljava/lang/String;)V
+
+    .line 19
+    const/4 p0, 0x0
+
+    .line 20
+    return-object p0
+.end method
+
+.method public getFormat()Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    const-string p0, "X.509"
+
+    .line 3
+    return-object p0
+.end method
+
+.method public getOpenSSLKey()Lorg/conscrypt/OpenSSLKey;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public getRaw()[B
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 5
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_get_raw_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    const-string p0, "key is destroyed"
+
+    .line 16
+    invoke-static {p0}, Lg;->g(Ljava/lang/String;)V
+
+    .line 19
+    const/4 p0, 0x0
+
+    .line 20
+    return-object p0
+.end method
+
+.method public hashCode()I
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 5
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSslEdDsaPublicKey;->getRaw()[B
+
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
+
+    .line 12
+    move-result p0
+
+    .line 13
+    return p0
+
+    .line 14
+    :cond_0
+    const-string p0, "key is destroyed"
+
+    .line 16
+    invoke-static {p0}, Lg;->g(Ljava/lang/String;)V
+
+    .line 19
+    const/4 p0, 0x0
+
+    .line 20
+    return p0
+.end method

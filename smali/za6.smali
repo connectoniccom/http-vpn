@@ -1,0 +1,34 @@
+.class public abstract Lza6;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+
+# static fields
+.field public static final a:Lmd6;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 4
+
+    .line 1
+    sget-object v0, Lra6;->q:Lra6;
+
+    .line 3
+    new-instance v1, Lmd6;
+
+    .line 5
+    const-class v2, Lya6;
+
+    .line 7
+    const-class v3, Ly86;
+
+    .line 9
+    invoke-direct {v1, v2, v3, v0}, Lmd6;-><init>(Ljava/lang/Class;Ljava/lang/Class;Lnd6;)V
+
+    .line 12
+    sput-object v1, Lza6;->a:Lmd6;
+
+    .line 14
+    return-void
+.end method

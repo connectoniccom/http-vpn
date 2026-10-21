@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>"Yo'q"</item>
+        <item>Toʻliq</item>
+        <item>Faqat pastga havola</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>Oddiy</item>
+        <item>Boshiga kiritish</item>
+        <item>Oxiriga kiritish</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>Birlashtirilgan IPv4/IPv6 tunnel</item>
+        <item>Faqat IPv4 tunnel</item>
+        <item>"Afzallik yo'q"</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>Toshkulrang</item>
+        <item>Qizil</item>
+        <item>Pushti</item>
+        <item>Binafsha</item>
+        <item>To‘q binafsha</item>
+        <item>Indigo</item>
+        <item>Ko‘k</item>
+        <item>Och ko‘k</item>
+        <item>Moviy</item>
+        <item>Ko‘kimtir yashil</item>
+        <item>Yashil</item>
+        <item>Och yashil</item>
+        <item>Qahrabo</item>
+        <item>To‘q sariq</item>
+        <item>To‘q zarg‘aldoq</item>
+        <item>Jigarrang</item>
+        <item>Ko‘kimtir kulrang</item>
+        <item>Kulrang</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>Standart</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>"O'chirilgan"</item>
+        <item>Profil standart</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>Standart</item>
+        <item>Firefox</item>
+        <item>Chrome</item>
+        <item>Opera Mini</item>
+        <item>Puffin</item>
+        <item>Safari</item>
+        <item>UCBrowser</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>Standart V2Ray</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>Moslashuvchan</item>
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+</resources>

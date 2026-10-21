@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="auto_reconnect_interval_hours">
+        <item quantity="other">%1$d ساعت</item>
+        <item quantity="one">%1$d ساعت</item>
+    </plurals>
+    <plurals name="auto_reconnect_interval_minutes">
+        <item quantity="other">%1$d دقیقه</item>
+        <item quantity="one">%1$d دقیقه</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">%1$d روز قبل</item>
+        <item quantity="one">%1$d روز قبل</item>
+    </plurals>
+    <plurals name="global_search_result_count">
+        <item quantity="other">%d نتایج</item>
+        <item quantity="one">%d نتیجه</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%1$d ساعت قبل</item>
+        <item quantity="one">%1$d ساعت قبل</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%1$d دقیقه پیش</item>
+        <item quantity="one">%1$d دقیقه قبل</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d اعلان جدید</item>
+        <item quantity="one">%d اعلان جدید</item>
+    </plurals>
+    <plurals name="settings_apps_filter_active_summary">
+        <item quantity="other">فعال • حالت فیلتر • %1$d برنامه های انتخاب شده</item>
+        <item quantity="one">فعال • حالت فیلتر • %1$d برنامه انتخاب شد</item>
+    </plurals>
+    <plurals name="settings_apps_filter_bypass_summary">
+        <item quantity="other">فعال • حالت دور زدن • %1$d برنامه های انتخاب شده</item>
+        <item quantity="one">فعال • حالت دور زدن • %1$d برنامه انتخاب شد</item>
+    </plurals>
+    <plurals name="settings_reconnection_attempts_summary">
+        <item quantity="other">%1$d تلاش می کند</item>
+        <item quantity="one">%1$d تلاش</item>
+    </plurals>
+</resources>

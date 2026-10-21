@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="auto_reconnect_interval_hours">
+        <item quantity="other">%1$d ሰዓታት</item>
+        <item quantity="one">%1$d ሰዓት</item>
+    </plurals>
+    <plurals name="auto_reconnect_interval_minutes">
+        <item quantity="other">%1$d ደቂቃዎች</item>
+        <item quantity="one">%1$d ደቂቃ</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">%1$d ከቀናት በፊት</item>
+        <item quantity="one">%1$d ቀን በፊት</item>
+    </plurals>
+    <plurals name="global_search_result_count">
+        <item quantity="other">%d ውጤቶች</item>
+        <item quantity="one">%d ውጤት</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%1$d ከሰዓታት በፊት</item>
+        <item quantity="one">%1$d ከሰአት በፊት</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%1$d ከደቂቃዎች በፊት</item>
+        <item quantity="one">%1$d ደቂቃ በፊት</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d አዲስ ማሳወቂያዎች</item>
+        <item quantity="one">%d አዲስ ማሳወቂያዎች</item>
+    </plurals>
+    <plurals name="settings_apps_filter_active_summary">
+        <item quantity="other">ነቅቷል • የማጣሪያ ሁነታ • %1$d መተግበሪያዎች ተመርጠዋል</item>
+        <item quantity="one">ነቅቷል • የማጣሪያ ሁነታ • %1$d መተግበሪያ ተመርጧል</item>
+    </plurals>
+    <plurals name="settings_apps_filter_bypass_summary">
+        <item quantity="other">ነቅቷል • ማለፊያ ሁነታ • %1$d መተግበሪያዎች ተመርጠዋል</item>
+        <item quantity="one">ነቅቷል • ማለፊያ ሁነታ • %1$d መተግበሪያ ተመርጧል</item>
+    </plurals>
+    <plurals name="settings_reconnection_attempts_summary">
+        <item quantity="other">%1$d ሙከራዎች</item>
+        <item quantity="one">%1$d ሙከራ</item>
+    </plurals>
+</resources>

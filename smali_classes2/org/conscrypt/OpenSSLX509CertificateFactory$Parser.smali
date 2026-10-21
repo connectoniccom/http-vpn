@@ -1,0 +1,637 @@
+.class abstract Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/conscrypt/OpenSSLX509CertificateFactory;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "Parser"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lorg/conscrypt/OpenSSLX509CertificateFactory$1;)V
+    .registers 2
+
+    .line 5
+    invoke-direct {p0}, Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract fromPkcs7DerInputStream(Ljava/io/InputStream;)Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/io/InputStream;",
+            ")",
+            "Ljava/util/List<",
+            "+TT;>;"
+        }
+    .end annotation
+.end method
+
+.method public abstract fromPkcs7PemInputStream(Ljava/io/InputStream;)Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/io/InputStream;",
+            ")",
+            "Ljava/util/List<",
+            "+TT;>;"
+        }
+    .end annotation
+.end method
+
+.method public abstract fromX509DerInputStream(Ljava/io/InputStream;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/io/InputStream;",
+            ")TT;"
+        }
+    .end annotation
+.end method
+
+.method public abstract fromX509PemInputStream(Ljava/io/InputStream;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/io/InputStream;",
+            ")TT;"
+        }
+    .end annotation
+.end method
+
+.method public generateItem(Ljava/io/InputStream;)Ljava/lang/Object;
+    .registers 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/io/InputStream;",
+            ")TT;"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_b
+
+    .line 3
+    invoke-virtual {p1}, Ljava/io/InputStream;->markSupported()Z
+
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 9
+    invoke-static {}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$000()[B
+
+    .line 12
+    move-result-object v1
+
+    .line 13
+    array-length v1, v1
+
+    .line 14
+    invoke-virtual {p1, v1}, Ljava/io/InputStream;->mark(I)V
+
+    .line 17
+    :cond_0
+    new-instance v1, Ljava/io/PushbackInputStream;
+
+    .line 19
+    const/16 v2, 0x40
+
+    .line 21
+    invoke-direct {v1, p1, v2}, Ljava/io/PushbackInputStream;-><init>(Ljava/io/InputStream;I)V
+
+    .line 24
+    :try_start_0
+    invoke-static {}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$000()[B
+
+    .line 27
+    move-result-object v2
+
+    .line 28
+    array-length v2, v2
+
+    .line 29
+    new-array v2, v2, [B
+
+    .line 31
+    invoke-virtual {v1, v2}, Ljava/io/InputStream;->read([B)I
+
+    .line 34
+    move-result v3
+
+    .line 35
+    if-ltz v3, :cond_9
+
+    .line 37
+    const/4 v4, 0x0
+
+    .line 38
+    invoke-virtual {v1, v2, v4, v3}, Ljava/io/PushbackInputStream;->unread([BII)V
+
+    .line 41
+    aget-byte v3, v2, v4
+
+    .line 43
+    const/16 v5, 0x2d
+
+    .line 45
+    if-ne v3, v5, :cond_1
+
+    .line 47
+    invoke-virtual {p0, v1}, Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;->fromX509PemInputStream(Ljava/io/InputStream;)Ljava/lang/Object;
+
+    .line 50
+    move-result-object p0
+
+    .line 51
+    return-object p0
+
+    .line 52
+    :catch_0
+    move-exception p0
+
+    .line 53
+    goto :goto_1
+
+    .line 54
+    :cond_1
+    invoke-static {v2}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$100([B)Z
+
+    .line 57
+    move-result v3
+
+    .line 58
+    if-eqz v3, :cond_3
+
+    .line 60
+    invoke-virtual {p0, v1}, Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;->fromPkcs7DerInputStream(Ljava/io/InputStream;)Ljava/util/List;
+
+    .line 63
+    move-result-object p0
+
+    .line 64
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    .line 67
+    move-result v1
+
+    .line 68
+    if-nez v1, :cond_2
+
+    .line 70
+    const/4 p0, 0x0
+
+    .line 71
+    return-object p0
+
+    .line 72
+    :cond_2
+    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 75
+    move-result-object p0
+
+    .line 76
+    return-object p0
+
+    .line 77
+    :cond_3
+    aget-byte v2, v2, v4
+
+    .line 79
+    const/16 v3, 0x30
+
+    .line 81
+    if-ne v2, v3, :cond_4
+
+    .line 83
+    invoke-virtual {p0, v1}, Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;->fromX509DerInputStream(Ljava/io/InputStream;)Ljava/lang/Object;
+
+    .line 86
+    move-result-object p0
+
+    .line 87
+    return-object p0
+
+    .line 88
+    :cond_4
+    invoke-static {}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$200()[B
+
+    .line 91
+    move-result-object v2
+
+    .line 92
+    array-length v2, v2
+
+    .line 93
+    new-array v2, v2, [B
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 95
+    move v3, v4
+
+    .line 96
+    :cond_5
+    :goto_0
+    const/4 v6, -0x1
+
+    .line 97
+    const-string v7, "No certificate found"
+
+    .line 99
+    if-eq v3, v6, :cond_8
+
+    .line 101
+    :try_start_1
+    invoke-virtual {v1}, Ljava/io/PushbackInputStream;->read()I
+
+    .line 104
+    move-result v3
+
+    .line 105
+    if-ne v3, v5, :cond_5
+
+    .line 107
+    invoke-virtual {v1, v3}, Ljava/io/PushbackInputStream;->unread(I)V
+
+    .line 110
+    invoke-virtual {v1, v2}, Ljava/io/InputStream;->read([B)I
+
+    .line 113
+    move-result v6
+
+    .line 114
+    invoke-static {}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$200()[B
+
+    .line 117
+    move-result-object v8
+
+    .line 118
+    array-length v8, v8
+
+    .line 119
+    if-lt v6, v8, :cond_7
+
+    .line 121
+    invoke-virtual {v1, v2, v4, v6}, Ljava/io/PushbackInputStream;->unread([BII)V
+
+    .line 124
+    invoke-static {}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$200()[B
+
+    .line 127
+    move-result-object v6
+
+    .line 128
+    invoke-static {v2, v6}, Ljava/util/Arrays;->equals([B[B)Z
+
+    .line 131
+    move-result v6
+
+    .line 132
+    if-eqz v6, :cond_6
+
+    .line 134
+    invoke-virtual {p0, v1}, Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;->fromX509PemInputStream(Ljava/io/InputStream;)Ljava/lang/Object;
+
+    .line 137
+    move-result-object p0
+
+    .line 138
+    return-object p0
+
+    .line 139
+    :cond_6
+    invoke-virtual {v1}, Ljava/io/PushbackInputStream;->read()I
+
+    .line 142
+    goto :goto_0
+
+    .line 143
+    :cond_7
+    new-instance p0, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;
+
+    .line 145
+    invoke-direct {p0, v7}, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;-><init>(Ljava/lang/String;)V
+
+    .line 148
+    throw p0
+
+    .line 149
+    :cond_8
+    new-instance p0, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;
+
+    .line 151
+    invoke-direct {p0, v7}, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;-><init>(Ljava/lang/String;)V
+
+    .line 154
+    throw p0
+
+    .line 155
+    :cond_9
+    new-instance p0, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;
+
+    .line 157
+    const-string v1, "inStream is empty"
+
+    .line 159
+    invoke-direct {p0, v1}, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;-><init>(Ljava/lang/String;)V
+
+    .line 162
+    throw p0
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 163
+    :goto_1
+    if-eqz v0, :cond_a
+
+    .line 165
+    :try_start_2
+    invoke-virtual {p1}, Ljava/io/InputStream;->reset()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
+
+    .line 168
+    :catch_1
+    :cond_a
+    new-instance p1, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;
+
+    .line 170
+    invoke-direct {p1, p0}, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;-><init>(Ljava/lang/Exception;)V
+
+    .line 173
+    throw p1
+
+    .line 174
+    :cond_b
+    new-instance p0, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;
+
+    .line 176
+    const-string p1, "inStream == null"
+
+    .line 178
+    invoke-direct {p0, p1}, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;-><init>(Ljava/lang/String;)V
+
+    .line 181
+    throw p0
+.end method
+
+.method public generateItems(Ljava/io/InputStream;)Ljava/util/Collection;
+    .registers 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/io/InputStream;",
+            ")",
+            "Ljava/util/Collection<",
+            "+TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_8
+
+    .line 3
+    invoke-virtual {p1}, Ljava/io/InputStream;->markSupported()Z
+
+    .line 6
+    move-result v0
+
+    .line 7
+    const/16 v1, 0x40
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 11
+    invoke-virtual {p1, v1}, Ljava/io/InputStream;->mark(I)V
+
+    .line 14
+    :cond_0
+    new-instance v2, Ljava/io/PushbackInputStream;
+
+    .line 16
+    invoke-direct {v2, p1, v1}, Ljava/io/PushbackInputStream;-><init>(Ljava/io/InputStream;I)V
+
+    .line 19
+    :try_start_0
+    invoke-static {}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$000()[B
+
+    .line 22
+    move-result-object v3
+
+    .line 23
+    array-length v3, v3
+
+    .line 24
+    new-array v3, v3, [B
+
+    .line 26
+    invoke-virtual {v2, v3}, Ljava/io/InputStream;->read([B)I
+
+    .line 29
+    move-result v4
+
+    .line 30
+    if-gez v4, :cond_1
+
+    .line 32
+    new-instance p0, Ljava/util/ArrayList;
+
+    .line 34
+    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 37
+    return-object p0
+
+    .line 38
+    :catch_0
+    move-exception p0
+
+    .line 39
+    goto :goto_1
+
+    .line 40
+    :cond_1
+    const/4 v5, 0x0
+
+    .line 41
+    invoke-virtual {v2, v3, v5, v4}, Ljava/io/PushbackInputStream;->unread([BII)V
+
+    .line 44
+    invoke-static {}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$000()[B
+
+    .line 47
+    move-result-object v5
+
+    .line 48
+    array-length v5, v5
+
+    .line 49
+    if-ne v4, v5, :cond_2
+
+    .line 51
+    invoke-static {}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$000()[B
+
+    .line 54
+    move-result-object v4
+
+    .line 55
+    invoke-static {v4, v3}, Ljava/util/Arrays;->equals([B[B)Z
+
+    .line 58
+    move-result v4
+
+    .line 59
+    if-eqz v4, :cond_2
+
+    .line 61
+    invoke-virtual {p0, v2}, Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;->fromPkcs7PemInputStream(Ljava/io/InputStream;)Ljava/util/List;
+
+    .line 64
+    move-result-object p0
+
+    .line 65
+    return-object p0
+
+    .line 66
+    :cond_2
+    invoke-static {v3}, Lorg/conscrypt/OpenSSLX509CertificateFactory;->access$100([B)Z
+
+    .line 69
+    move-result v3
+
+    .line 70
+    if-eqz v3, :cond_3
+
+    .line 72
+    invoke-virtual {p0, v2}, Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;->fromPkcs7DerInputStream(Ljava/io/InputStream;)Ljava/util/List;
+
+    .line 75
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 76
+    return-object p0
+
+    .line 77
+    :cond_3
+    new-instance v3, Ljava/util/ArrayList;
+
+    .line 79
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    .line 82
+    :cond_4
+    if-eqz v0, :cond_5
+
+    .line 84
+    invoke-virtual {p1, v1}, Ljava/io/InputStream;->mark(I)V
+
+    .line 87
+    :cond_5
+    :try_start_1
+    invoke-virtual {p0, v2}, Lorg/conscrypt/OpenSSLX509CertificateFactory$Parser;->generateItem(Ljava/io/InputStream;)Ljava/lang/Object;
+
+    .line 90
+    move-result-object v4
+
+    .line 91
+    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_1
+    .catch Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 94
+    goto :goto_0
+
+    .line 95
+    :catch_1
+    if-eqz v0, :cond_6
+
+    .line 97
+    :try_start_2
+    invoke-virtual {p1}, Ljava/io/InputStream;->reset()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 100
+    :catch_2
+    :cond_6
+    const/4 v4, 0x0
+
+    .line 101
+    :goto_0
+    if-nez v4, :cond_4
+
+    .line 103
+    return-object v3
+
+    .line 104
+    :goto_1
+    if-eqz v0, :cond_7
+
+    .line 106
+    :try_start_3
+    invoke-virtual {p1}, Ljava/io/InputStream;->reset()V
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 109
+    :catch_3
+    :cond_7
+    new-instance p1, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;
+
+    .line 111
+    invoke-direct {p1, p0}, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;-><init>(Ljava/lang/Exception;)V
+
+    .line 114
+    throw p1
+
+    .line 115
+    :cond_8
+    new-instance p0, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;
+
+    .line 117
+    const-string p1, "inStream == null"
+
+    .line 119
+    invoke-direct {p0, p1}, Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException;-><init>(Ljava/lang/String;)V
+
+    .line 122
+    throw p0
+.end method

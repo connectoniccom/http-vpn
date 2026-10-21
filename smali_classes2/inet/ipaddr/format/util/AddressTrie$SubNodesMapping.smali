@@ -1,0 +1,54 @@
+.class public abstract Linet/ipaddr/format/util/AddressTrie$SubNodesMapping;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Linet/ipaddr/format/util/AddressTrie;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "SubNodesMapping"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Linet/ipaddr/Address;",
+        "N:",
+        "Linet/ipaddr/format/util/AddressTrie$SubNodesMapping<",
+        "TE;TN;>;>",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field subNodes:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Linet/ipaddr/format/util/AssociativeAddressTrie$AssociativeTrieNode<",
+            "TE;TN;>;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract getUnderlyingValue()Ljava/lang/Object;
+.end method

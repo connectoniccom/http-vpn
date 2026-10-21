@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="32.0dip"
+    android:layout_height="fill_parent"
+    android:contentDescription="@string/battery_attention_required"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:layout_gravity="center"
+        android:id="@id/nav_attention_dot"
+        android:background="@drawable/bg_nav_attention_dot"
+        android:layout_width="9.0dip"
+        android:layout_height="9.0dip" />
+</FrameLayout>

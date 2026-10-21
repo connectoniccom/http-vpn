@@ -1,0 +1,149 @@
+.class public Lms0;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+# interfaces
+.implements Lcom/google/common/util/concurrent/ListenableFuture;
+
+
+# instance fields
+.field public final a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+.field public b:Lll;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    new-instance v0, Lxe5;
+
+    .line 6
+    const/16 v1, 0xb
+
+    .line 8
+    invoke-direct {v0, v1, p0}, Lxe5;-><init>(ILjava/lang/Object;)V
+
+    .line 11
+    invoke-static {v0}, Lj41;->j(Lml;)Lol;
+
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Lms0;->a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+    .line 17
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/google/common/util/concurrent/ListenableFuture;)V
+    .registers 2
+
+    .line 18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 19
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 20
+    iput-object p1, p0, Lms0;->a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    .registers 3
+
+    .line 1
+    iget-object p0, p0, Lms0;->a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+    .line 3
+    invoke-interface {p0, p1, p2}, Lcom/google/common/util/concurrent/ListenableFuture;->addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    .line 6
+    return-void
+.end method
+
+.method public cancel(Z)Z
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lms0;->a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+    .line 3
+    invoke-interface {p0, p1}, Ljava/util/concurrent/Future;->cancel(Z)Z
+
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public get()Ljava/lang/Object;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lms0;->a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+    .line 3
+    invoke-interface {p0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    .registers 4
+
+    .line 8
+    iget-object p0, p0, Lms0;->a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+    invoke-interface {p0, p1, p2, p3}, Ljava/util/concurrent/Future;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final isCancelled()Z
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lms0;->a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+    .line 3
+    invoke-interface {p0}, Ljava/util/concurrent/Future;->isCancelled()Z
+
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final isDone()Z
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lms0;->a:Lcom/google/common/util/concurrent/ListenableFuture;
+
+    .line 3
+    invoke-interface {p0}, Ljava/util/concurrent/Future;->isDone()Z
+
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method

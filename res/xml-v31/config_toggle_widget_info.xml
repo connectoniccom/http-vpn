@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    android:description="@string/widget_toggle_description"
+    android:minWidth="72.0dip"
+    android:minHeight="72.0dip"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_config_toggle"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    android:previewLayout="@layout/widget_config_toggle"
+    android:targetCellWidth="1"
+    android:targetCellHeight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

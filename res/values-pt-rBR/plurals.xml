@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="auto_reconnect_interval_hours">
+        <item quantity="other">%1$d horas</item>
+        <item quantity="one">%1$d hora</item>
+    </plurals>
+    <plurals name="auto_reconnect_interval_minutes">
+        <item quantity="other">%1$d minutos</item>
+        <item quantity="one">%1$d minuto</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">há %1$d dias</item>
+        <item quantity="one">há %1$d dia</item>
+        <item quantity="many">há %1$d dias</item>
+    </plurals>
+    <plurals name="global_search_result_count">
+        <item quantity="other">%d resultados</item>
+        <item quantity="one">%d resultado</item>
+        <item quantity="many">%d resultados</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">há %1$d horas</item>
+        <item quantity="one">há %1$d hora</item>
+        <item quantity="many">há %1$d horas</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">há %1$d minutos</item>
+        <item quantity="one">há %1$d minuto</item>
+        <item quantity="many">há %1$d minutos</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novas notificações</item>
+        <item quantity="one">%d nova notificação</item>
+    </plurals>
+    <plurals name="settings_apps_filter_active_summary">
+        <item quantity="other">Ativado • Modo de filtro • Aplicativos %1$d selecionados</item>
+        <item quantity="one">Ativado • Modo de filtro • Aplicativo %1$d selecionado</item>
+        <item quantity="many">Ativado • Modo de filtro • Aplicativos %1$d selecionados</item>
+    </plurals>
+    <plurals name="settings_apps_filter_bypass_summary">
+        <item quantity="other">Habilitado • Modo de desvio • aplicativos %1$d selecionados</item>
+        <item quantity="one">Habilitado • Modo de desvio • aplicativo %1$d selecionado</item>
+        <item quantity="many">Habilitado • Modo de desvio • aplicativos %1$d selecionados</item>
+    </plurals>
+    <plurals name="settings_reconnection_attempts_summary">
+        <item quantity="other">%1$d tentativas</item>
+        <item quantity="one">%1$d tentativa</item>
+        <item quantity="many">%1$d tentativas</item>
+    </plurals>
+</resources>

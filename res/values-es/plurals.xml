@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="auto_reconnect_interval_hours">
+        <item quantity="other">%1$d horas</item>
+        <item quantity="one">%1$d hora</item>
+    </plurals>
+    <plurals name="auto_reconnect_interval_minutes">
+        <item quantity="other">%1$d minutos</item>
+        <item quantity="one">%1$d minuto</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">hace %1$d días</item>
+        <item quantity="one">hace %1$d día</item>
+        <item quantity="many">hace %1$d días</item>
+    </plurals>
+    <plurals name="global_search_result_count">
+        <item quantity="other">%d resultados</item>
+        <item quantity="one">%d resultado</item>
+        <item quantity="many">%d resultados</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">hace %1$d horas</item>
+        <item quantity="one">hace %1$d hora</item>
+        <item quantity="many">hace %1$d horas</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">hace %1$d minutos</item>
+        <item quantity="one">hace %1$d minuto</item>
+        <item quantity="many">hace %1$d minutos</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notificaciones nuevas</item>
+        <item quantity="one">%d notificación nueva</item>
+    </plurals>
+    <plurals name="settings_apps_filter_active_summary">
+        <item quantity="other">Activado • Modo de filtro • %1$d aplicaciones seleccionadas</item>
+        <item quantity="one">Activado • Modo de filtro • %1$d aplicación seleccionada</item>
+        <item quantity="many">Activado • Modo de filtro • %1$d aplicaciones seleccionadas</item>
+    </plurals>
+    <plurals name="settings_apps_filter_bypass_summary">
+        <item quantity="other">Activado • Modo de exclusión • %1$d aplicaciones seleccionadas</item>
+        <item quantity="one">Activado • Modo de exclusión • %1$d aplicación seleccionada</item>
+        <item quantity="many">Activado • Modo de exclusión • %1$d aplicaciones seleccionadas</item>
+    </plurals>
+    <plurals name="settings_reconnection_attempts_summary">
+        <item quantity="other">%1$d intentos</item>
+        <item quantity="one">%1$d intento</item>
+        <item quantity="many">%1$d intentos</item>
+    </plurals>
+</resources>

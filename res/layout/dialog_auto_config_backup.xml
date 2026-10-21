@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:padding="0.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clipToOutline="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/tv_title"
+        android:background="@drawable/bg_dialog_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:paddingStart="16.0dip"
+        android:paddingEnd="8.0dip">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/btn_reset"
+            android:text="@string/settings_reset_action"
+            style="@style/DialogActionButton.Tonal" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/btn_save"
+            android:text="@string/settings_save"
+            style="@style/DialogActionButton.Primary" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="13.0sp"
+        android:id="@id/auto_backup_location_hint"
+        android:paddingTop="14.0dip"
+        android:paddingBottom="4.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20.0dip"
+        android:paddingEnd="20.0dip" />
+    <RadioGroup
+        android:orientation="vertical"
+        android:id="@id/choice_group"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16.0dip"
+        android:paddingEnd="16.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

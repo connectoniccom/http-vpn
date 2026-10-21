@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>Không</item>
+        <item>Đầy đủ</item>
+        <item>Chỉ đường xuống</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>Thông thường</item>
+        <item>Chèn phía trước</item>
+        <item>Chèn phía sau</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>Đường hầm kết hợp IPv4/IPv6</item>
+        <item>Đường hầm chỉ IPv4</item>
+        <item>Không có ưu tiên</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>Xám đá</item>
+        <item>Đỏ</item>
+        <item>Hồng</item>
+        <item>Tím</item>
+        <item>Tím đậm</item>
+        <item>Chàm</item>
+        <item>Xanh dương</item>
+        <item>Xanh dương nhạt</item>
+        <item>Xanh lơ</item>
+        <item>Xanh mòng két</item>
+        <item>Xanh lá</item>
+        <item>Xanh lá nhạt</item>
+        <item>Hổ phách</item>
+        <item>Cam</item>
+        <item>Cam đậm</item>
+        <item>Nâu</item>
+        <item>Xám xanh</item>
+        <item>Xám</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>Mặc định</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>Đã tắt</item>
+        <item>Hồ sơ mặc định</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>Mặc định</item>
+        <item>Firefox</item>
+        <item>Chrome</item>
+        <item>Opera Mini</item>
+        <item>Puffin</item>
+        <item>Safari</item>
+        <item>UCBrowser</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>V2Ray mặc định</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>Thích ứng</item>
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voice-interaction-service
+    android:settingsActivity="com.wyrhub.vpn.activities.IpHunterActivity"
+    android:sessionService="com.wyrhub.vpn.service.MyAssistantSessionService"
+    android:recognitionService="com.wyrhub.vpn.service.MyRecognitionService"
+    android:supportsAssist="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

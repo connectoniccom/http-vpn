@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/action_copy_results"
+        android:title="@string/tool_copy_results"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_share_results"
+        android:title="@string/tool_share_results"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_clear_results"
+        android:title="@string/tool_clear_results"
+        app:showAsAction="never" />
+</menu>

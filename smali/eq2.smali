@@ -1,0 +1,31 @@
+.class public abstract synthetic Leq2;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+
+# static fields
+.field public static final a:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Runtime;->availableProcessors()I
+
+    .line 8
+    move-result v0
+
+    .line 9
+    sput v0, Leq2;->a:I
+
+    .line 11
+    return-void
+.end method

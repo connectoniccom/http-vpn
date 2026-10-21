@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@id/widget_toggle_root"
+    android:background="@drawable/bg_widget_quick"
+    android:padding="8.0dip"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:contentDescription="@string/widget_toggle_description"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/widget_toggle_icon"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:src="@drawable/ic_widget_power"
+        android:contentDescription="@null" />
+    <TextView
+        android:textSize="12.0sp"
+        android:textColor="@android:color/white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/widget_toggle_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:text="@string/connect"
+        android:maxLines="2"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/pro_root"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/tool_bar"
+        layout="@layout/tool_bar" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/pro_swipe_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar">
+        <ScrollView
+            android:id="@id/pro_scroll"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingTop="12.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20.0dip"
+                android:paddingEnd="20.0dip">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_pro_hero"
+                    android:padding="16.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:background="@drawable/bg_pro_icon"
+                        android:padding="10.0dip"
+                        android:layout_width="48.0dip"
+                        android:layout_height="48.0dip">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:contentDescription="@string/pro_subscription_name"
+                            app:srcCompat="@drawable/ic_pro_crown" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:layout_marginStart="14.0dip">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="22.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pro_ink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pro_subscription_name" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="14.0sp"
+                            android:textColor="#b0201506"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="@string/pro_hero_title" />
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="11.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:id="@id/pro_active_badge"
+                        android:background="@drawable/bg_pro_active_badge"
+                        android:paddingTop="5.0dip"
+                        android:paddingBottom="5.0dip"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_active_badge"
+                        android:paddingStart="10.0dip"
+                        android:paddingEnd="10.0dip" />
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@id/pro_features_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.0dip"
+                    app:cardCornerRadius="14.0dip"
+                    app:cardElevation="2.0dip">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingTop="6.0dip"
+                        android:paddingBottom="6.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <include
+                            layout="@layout/item_pro_feature_no_ads" />
+                        <View
+                            android:background="?android:listDivider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:layout_marginStart="58.0dip" />
+                        <include
+                            layout="@layout/item_pro_feature_servers" />
+                        <View
+                            android:background="?android:listDivider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:layout_marginStart="58.0dip" />
+                        <include
+                            layout="@layout/item_pro_feature_support" />
+                        <View
+                            android:id="@id/pro_plan_divider"
+                            android:background="?android:listDivider"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:layout_marginStart="58.0dip" />
+                        <include
+                            android:id="@id/pro_plan_row"
+                            android:visibility="gone"
+                            layout="@layout/item_pro_plan" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip">
+                    <ProgressBar
+                        android:id="@id/pro_progress"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_marginEnd="8.0dip"
+                        android:indeterminateTint="@color/pro_gold_dark"
+                        style="?android:progressBarStyleSmall" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textSize="13.0sp"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:id="@id/pro_status"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_status_checking"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:enabled="false"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pro_ink"
+                    android:id="@id/pro_purchase_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:minHeight="64.0dip"
+                    android:text="@string/pro_purchase"
+                    android:insetTop="0.0dip"
+                    android:insetBottom="0.0dip"
+                    android:textAllCaps="false"
+                    app:backgroundTint="@color/pro_gold"
+                    app:cornerRadius="14.0dip" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/pro_secondary_actions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip">
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        app:constraint_referenced_ids="pro_restore_button,pro_redeem_button"
+                        app:flow_horizontalGap="24.0dip"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalGap="8.0dip"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="16.0sp"
+                        android:id="@id/pro_restore_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48.0dip"
+                        android:text="@string/pro_restore"
+                        android:textAllCaps="false"
+                        style="@style/Widget.MaterialComponents.Button.TextButton" />
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="16.0sp"
+                        android:id="@id/pro_redeem_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48.0dip"
+                        android:text="@string/pro_redeem_code"
+                        android:textAllCaps="false"
+                        style="@style/Widget.MaterialComponents.Button.TextButton" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@id/pro_manage_button"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:minHeight="48.0dip"
+                    android:text="@string/pro_manage"
+                    style="@style/Widget.MaterialComponents.Button.TextButton" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="11.0sp"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/pro_legal"
+                    android:lineSpacingExtra="2.0dip"
+                    android:alpha="0.65" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip">
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="13.0sp"
+                        android:id="@id/pro_privacy_button"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48.0dip"
+                        android:text="@string/ui_privacy_policy"
+                        android:layout_weight="1.0"
+                        android:textAllCaps="false"
+                        style="@style/Widget.MaterialComponents.Button.TextButton" />
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="13.0sp"
+                        android:id="@id/pro_terms_button"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48.0dip"
+                        android:text="@string/ui_terms_of_service"
+                        android:layout_weight="1.0"
+                        android:textAllCaps="false"
+                        style="@style/Widget.MaterialComponents.Button.TextButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

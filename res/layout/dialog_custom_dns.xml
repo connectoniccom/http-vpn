@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_surface"
+    android:padding="0.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clipToOutline="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/tv_title"
+        android:background="@drawable/bg_dialog_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:paddingStart="16.0dip"
+        android:paddingEnd="8.0dip">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18.0sp"
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/export_tweak"
+            android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/btn_reset"
+            android:text="@string/reset"
+            style="@style/DialogActionButton.Tonal" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@id/btn_save"
+            android:text="@string/file_dialog_create"
+            style="@style/DialogActionButton.Primary" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16.0dip"
+        android:paddingEnd="16.0dip">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.0dip">
+            <androidx.appcompat.widget.SwitchCompat
+                android:textStyle="bold"
+                android:id="@id/switch_custom_dns"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:text="@string/custom_dns_enable" />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@id/spn_dns_category"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginBottom="4.0dip"
+                android:drawSelectorOnTop="true"
+                android:spinnerMode="dropdown" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="12.0sp"
+                android:textColor="?android:textColorSecondary"
+                android:id="@id/tv_dns_info"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:paddingStart="4.0dip"
+                android:paddingEnd="4.0dip" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/til_dns1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:hint="@string/ui_dns_1"
+                style="@style/Widget.App.TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="12.0sp"
+                    android:id="@id/et_dns1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/til_dns2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:hint="@string/ui_dns_2_optional"
+                style="@style/Widget.App.TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="12.0sp"
+                    android:id="@id/et_dns2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

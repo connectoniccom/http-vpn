@@ -1,0 +1,92 @@
+.class public final synthetic Lcom/wyrhub/vpn/activities/b;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
+
+.field public final synthetic d:Ljava/lang/String;
+
+
+# direct methods
+.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/String;)V
+    .registers 4
+
+    .line 1
+    iput p1, p0, Lcom/wyrhub/vpn/activities/b;->a:I
+
+    .line 3
+    iput-object p2, p0, Lcom/wyrhub/vpn/activities/b;->b:Ljava/lang/Object;
+
+    .line 5
+    iput-object p3, p0, Lcom/wyrhub/vpn/activities/b;->d:Ljava/lang/String;
+
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lcom/wyrhub/vpn/activities/b;->a:I
+
+    .line 3
+    iget-object v1, p0, Lcom/wyrhub/vpn/activities/b;->d:Ljava/lang/String;
+
+    .line 5
+    iget-object p0, p0, Lcom/wyrhub/vpn/activities/b;->b:Ljava/lang/Object;
+
+    .line 7
+    packed-switch v0, :pswitch_data_0
+
+    .line 10
+    check-cast p0, Lcom/wyrhub/vpn/activities/ServersActivity$ServerCatalogBridge;
+
+    .line 12
+    invoke-static {p0, v1}, Lcom/wyrhub/vpn/activities/ServersActivity$ServerCatalogBridge;->b(Lcom/wyrhub/vpn/activities/ServersActivity$ServerCatalogBridge;Ljava/lang/String;)V
+
+    .line 15
+    return-void
+
+    .line 16
+    :pswitch_0
+    check-cast p0, Lcom/wyrhub/vpn/activities/PublicConfigsActivity$BlobDownloadBridge;
+
+    .line 18
+    invoke-static {p0, v1}, Lcom/wyrhub/vpn/activities/PublicConfigsActivity$BlobDownloadBridge;->b(Lcom/wyrhub/vpn/activities/PublicConfigsActivity$BlobDownloadBridge;Ljava/lang/String;)V
+
+    .line 21
+    return-void
+
+    .line 22
+    :pswitch_1
+    check-cast p0, Lcom/wyrhub/vpn/activities/PublicConfigsActivity$BlobDownloadBridge;
+
+    .line 24
+    invoke-static {p0, v1}, Lcom/wyrhub/vpn/activities/PublicConfigsActivity$BlobDownloadBridge;->a(Lcom/wyrhub/vpn/activities/PublicConfigsActivity$BlobDownloadBridge;Ljava/lang/String;)V
+
+    .line 27
+    return-void
+
+    .line 28
+    nop
+
+    .line 29
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

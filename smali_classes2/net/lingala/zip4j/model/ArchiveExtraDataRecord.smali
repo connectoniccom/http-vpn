@@ -1,0 +1,85 @@
+.class public Lnet/lingala/zip4j/model/ArchiveExtraDataRecord;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+
+# instance fields
+.field private extraFieldData:Ljava/lang/String;
+
+.field private extraFieldLength:I
+
+.field private signature:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public getExtraFieldData()Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lnet/lingala/zip4j/model/ArchiveExtraDataRecord;->extraFieldData:Ljava/lang/String;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public getExtraFieldLength()I
+    .registers 1
+
+    .line 1
+    iget p0, p0, Lnet/lingala/zip4j/model/ArchiveExtraDataRecord;->extraFieldLength:I
+
+    .line 3
+    return p0
+.end method
+
+.method public getSignature()I
+    .registers 1
+
+    .line 1
+    iget p0, p0, Lnet/lingala/zip4j/model/ArchiveExtraDataRecord;->signature:I
+
+    .line 3
+    return p0
+.end method
+
+.method public setExtraFieldData(Ljava/lang/String;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Lnet/lingala/zip4j/model/ArchiveExtraDataRecord;->extraFieldData:Ljava/lang/String;
+
+    .line 3
+    return-void
+.end method
+
+.method public setExtraFieldLength(I)V
+    .registers 2
+
+    .line 1
+    iput p1, p0, Lnet/lingala/zip4j/model/ArchiveExtraDataRecord;->extraFieldLength:I
+
+    .line 3
+    return-void
+.end method
+
+.method public setSignature(I)V
+    .registers 2
+
+    .line 1
+    iput p1, p0, Lnet/lingala/zip4j/model/ArchiveExtraDataRecord;->signature:I
+
+    .line 3
+    return-void
+.end method

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>Tidak</item>
+        <item>penuh</item>
+        <item>Downlink sahaja</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>Biasa</item>
+        <item>Sisipan di hadapan</item>
+        <item>Sisipan di belakang</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>Terowong IPv4/IPv6 gabungan</item>
+        <item>Terowong IPv4 sahaja</item>
+        <item>Tiada keutamaan</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>Kelabu batu</item>
+        <item>Merah</item>
+        <item>Merah jambu</item>
+        <item>Ungu</item>
+        <item>Ungu tua</item>
+        <item>Nila</item>
+        <item>Biru</item>
+        <item>Biru muda</item>
+        <item>Sian</item>
+        <item>Hijau kebiruan</item>
+        <item>Hijau</item>
+        <item>Hijau muda</item>
+        <item>Ambar</item>
+        <item>Jingga</item>
+        <item>Jingga tua</item>
+        <item>Coklat</item>
+        <item>Kelabu kebiruan</item>
+        <item>Kelabu</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>Lalai</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>Dilumpuhkan</item>
+        <item>Lalai Profil</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>Lalai</item>
+        <item>Firefox</item>
+        <item>Chrome</item>
+        <item>Opera Mini</item>
+        <item>Puffin</item>
+        <item>Safari</item>
+        <item>UCBrowser</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>Lalai V2Ray</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>Adaptif</item>
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+</resources>

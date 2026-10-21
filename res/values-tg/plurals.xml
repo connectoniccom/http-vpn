@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="auto_reconnect_interval_hours">
+        <item quantity="other">%1$d соат</item>
+        <item quantity="one">%1$d соат</item>
+    </plurals>
+    <plurals name="auto_reconnect_interval_minutes">
+        <item quantity="other">%1$d дақиқа</item>
+        <item quantity="one">%1$d дақиқа</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">%1$d руз пеш</item>
+        <item quantity="one">%1$d рӯз пеш</item>
+    </plurals>
+    <plurals name="global_search_result_count">
+        <item quantity="other">%d натиҷаҳо</item>
+        <item quantity="one">%d натиҷа</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%1$d соат пеш</item>
+        <item quantity="one">%1$d соат пеш</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%1$d дақиқа пеш</item>
+        <item quantity="one">%1$d дақиқа пеш</item>
+    </plurals>
+    <plurals name="settings_apps_filter_active_summary">
+        <item quantity="other">Фаъол • Ҳолати филтр • %1$d барномаҳо интихобшуда</item>
+        <item quantity="one">Фаъол • Ҳолати филтр • %1$d барнома интихоб шуд</item>
+    </plurals>
+    <plurals name="settings_apps_filter_bypass_summary">
+        <item quantity="other">Фаъол • Ҳолати гузариш • %1$d барномаҳо интихобшуда</item>
+        <item quantity="one">Фаъол • Ҳолати гузариш • %1$d барнома интихоб шуд</item>
+    </plurals>
+    <plurals name="settings_reconnection_attempts_summary">
+        <item quantity="other">%1$d кушишхо</item>
+        <item quantity="one">%1$d кушиш</item>
+    </plurals>
+</resources>

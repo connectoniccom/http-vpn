@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/item_settings"
+        android:title="@string/settings_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/item_favorites"
+        android:title="@string/global_search_favorites"
+        app:showAsAction="never" />
+    <item
+        android:icon="@drawable/ic_magnifier"
+        android:id="@id/item_global_search"
+        android:title="@string/global_search_menu"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/item_restart"
+        android:title="@string/restart"
+        app:showAsAction="never" />
+</menu>

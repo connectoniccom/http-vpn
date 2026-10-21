@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_magnifier"
+        android:id="@id/action_search"
+        android:title="@string/ui_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:icon="@drawable/ic_configs_select_all"
+        android:id="@id/action_toggle_select"
+        android:title="@string/ui_select_all"
+        app:showAsAction="always" />
+</menu>

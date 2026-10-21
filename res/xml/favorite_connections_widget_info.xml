@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    android:description="@string/widget_favorites_description"
+    android:minWidth="180.0dip"
+    android:minHeight="120.0dip"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_favorite_connections"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

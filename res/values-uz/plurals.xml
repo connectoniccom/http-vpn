@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="auto_reconnect_interval_hours">
+        <item quantity="other">%1$d soat</item>
+        <item quantity="one">%1$d soat</item>
+    </plurals>
+    <plurals name="auto_reconnect_interval_minutes">
+        <item quantity="other">%1$d daqiqa</item>
+        <item quantity="one">%1$d daqiqa</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">%1$d kun oldin</item>
+        <item quantity="one">%1$d kun oldin</item>
+    </plurals>
+    <plurals name="global_search_result_count">
+        <item quantity="other">%d natijalar</item>
+        <item quantity="one">%d natija</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%1$d soat oldin</item>
+        <item quantity="one">%1$d soat oldin</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%1$d daqiqa oldin</item>
+        <item quantity="one">%1$d daqiqa oldin</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d ta yangi bildirishnoma</item>
+        <item quantity="one">%d ta yangi bildirishnoma</item>
+    </plurals>
+    <plurals name="settings_apps_filter_active_summary">
+        <item quantity="other">Yoqilgan • Filtr rejimi • %1$d ilovalar tanlangan</item>
+        <item quantity="one">Yoqilgan • Filtr rejimi • %1$d ilova tanlangan</item>
+    </plurals>
+    <plurals name="settings_apps_filter_bypass_summary">
+        <item quantity="other">Yoqilgan • Bypass rejimi • %1$d ilovalar tanlangan</item>
+        <item quantity="one">Yoqilgan • Bypass rejimi • %1$d ilova tanlangan</item>
+    </plurals>
+    <plurals name="settings_reconnection_attempts_summary">
+        <item quantity="other">%1$d urinishlar</item>
+        <item quantity="one">%1$d urinish</item>
+    </plurals>
+</resources>

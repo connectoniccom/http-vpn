@@ -1,0 +1,71 @@
+.class public final synthetic Lsc;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+# interfaces
+.implements Ljava/util/concurrent/Executor;
+
+
+# instance fields
+.field public final synthetic a:I
+
+
+# direct methods
+.method public synthetic constructor <init>(I)V
+    .registers 2
+
+    .line 1
+    iput p1, p0, Lsc;->a:I
+
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final execute(Ljava/lang/Runnable;)V
+    .registers 2
+
+    .line 1
+    iget p0, p0, Lsc;->a:I
+
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 6
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+
+    .line 9
+    return-void
+
+    .line 10
+    :pswitch_0
+    invoke-static {}, Ltc;->N()Ltc;
+
+    .line 13
+    move-result-object p0
+
+    .line 14
+    iget-object p0, p0, Ltc;->n:Lla0;
+
+    .line 16
+    iget-object p0, p0, Lla0;->o:Ljava/util/concurrent/ExecutorService;
+
+    .line 18
+    invoke-interface {p0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 21
+    return-void
+
+    .line 22
+    nop
+
+    .line 23
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>አይ</item>
+        <item>ሙሉ</item>
+        <item>ዳውንሊንክ ብቻ</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>መደበኛ</item>
+        <item>ከፊት ማስገባት</item>
+        <item>ከኋላ ማስገባት</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>የተጣመረ IPv4/IPv6 ዋሻ</item>
+        <item>IPv4-ብቻ ዋሻ</item>
+        <item>ምርጫ የለም።</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>የድንጋይ ግራጫ</item>
+        <item>ቀይ</item>
+        <item>ሮዝ</item>
+        <item>ሐምራዊ</item>
+        <item>ጥቁር ሐምራዊ</item>
+        <item>ኢንዲጎ</item>
+        <item>ሰማያዊ</item>
+        <item>ፈካ ያለ ሰማያዊ</item>
+        <item>ሳይያን</item>
+        <item>አረንጓዴ ሰማያዊ</item>
+        <item>አረንጓዴ</item>
+        <item>ፈካ ያለ አረንጓዴ</item>
+        <item>አምበር</item>
+        <item>ብርቱካናማ</item>
+        <item>ጥቁር ብርቱካናማ</item>
+        <item>ቡናማ</item>
+        <item>ሰማያዊ ግራጫ</item>
+        <item>ግራጫ</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>ነባሪ</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>ተሰናክሏል።</item>
+        <item>የመገለጫ ነባሪ</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>ነባሪ</item>
+        <item>ፋየርፎክስ</item>
+        <item>Chrome</item>
+        <item>ኦፔራ ሚኒ</item>
+        <item>ፑፊን</item>
+        <item>ሳፋሪ</item>
+        <item>UCBrowser</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>V2Ray ነባሪ</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>የሚለምደዉ</item>
+        <item>ዩዲፒ</item>
+        <item>TCP</item>
+    </string-array>
+</resources>

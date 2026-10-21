@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>ไม่</item>
+        <item>เต็ม</item>
+        <item>ดาวน์ลิงค์เท่านั้น</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>ปกติ</item>
+        <item>แทรกด้านหน้า</item>
+        <item>แทรกด้านหลัง</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>IPv4/IPv6 อุโมงค์รวม</item>
+        <item>IPv4-เฉพาะช่องสัญญาณเท่านั้น</item>
+        <item>ไม่มีการตั้งค่า</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>เทาหิน</item>
+        <item>แดง</item>
+        <item>ชมพู</item>
+        <item>ม่วง</item>
+        <item>ม่วงเข้ม</item>
+        <item>คราม</item>
+        <item>น้ำเงิน</item>
+        <item>ฟ้า</item>
+        <item>ฟ้าอมเขียว</item>
+        <item>เขียวนกเป็ดน้ำ</item>
+        <item>เขียว</item>
+        <item>เขียวอ่อน</item>
+        <item>เหลืองอำพัน</item>
+        <item>ส้ม</item>
+        <item>ส้มเข้ม</item>
+        <item>น้ำตาล</item>
+        <item>เทาอมฟ้า</item>
+        <item>เทา</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>ค่าเริ่มต้น</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>ปิดการใช้งาน</item>
+        <item>ค่าเริ่มต้นของโปรไฟล์</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>ค่าเริ่มต้น</item>
+        <item>Firefox</item>
+        <item>Chrome</item>
+        <item>Opera Mini</item>
+        <item>Puffin</item>
+        <item>Safari</item>
+        <item>UCBrowser</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>V2Ray ค่าเริ่มต้น</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>ปรับตัวได้</item>
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+</resources>

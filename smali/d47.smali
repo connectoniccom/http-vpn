@@ -1,0 +1,14 @@
+.class public interface abstract Ld47;
+.super Ljava/lang/Object;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+
+# virtual methods
+.method public abstract a(I)Z
+.end method
+
+.method public abstract b(Landroid/content/Intent;)V
+.end method
+
+.method public abstract c(Landroid/app/job/JobParameters;)V
+.end method

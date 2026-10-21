@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_config"
+        android:id="@id/nav_public_configs"
+        android:orderInCategory="4000"
+        android:title="@string/global_search_public_configs" />
+    <item
+        android:icon="@drawable/ic_server"
+        android:id="@id/nav_servers"
+        android:orderInCategory="6000"
+        android:title="@string/global_search_public_servers" />
+    <item
+        android:icon="@drawable/ic_globe"
+        android:id="@id/nav_web_panel"
+        android:orderInCategory="8000"
+        android:title="@string/global_search_web_panel" />
+    <item
+        android:icon="@drawable/ic_radio"
+        android:id="@id/nav_radio_info"
+        android:orderInCategory="12000"
+        android:title="@string/global_search_radio_network" />
+    <item
+        android:icon="@drawable/ic_data_usage"
+        android:id="@id/nav_data_usage"
+        android:orderInCategory="16000"
+        android:title="@string/global_search_data_usage" />
+    <item
+        android:icon="@drawable/ic_ids_id"
+        android:id="@id/nav_hwid"
+        android:orderInCategory="20000"
+        android:title="@string/global_search_device_id" />
+    <item
+        android:icon="@drawable/ic_battery"
+        android:id="@id/nav_battery"
+        android:orderInCategory="24000"
+        android:title="@string/global_search_battery_optimization" />
+    <item
+        android:icon="@drawable/ic_themes"
+        android:id="@id/nav_themes"
+        android:visible="false"
+        android:orderInCategory="26000"
+        android:title="@string/global_search_themes" />
+    <item
+        android:icon="@drawable/ic_widgets"
+        android:id="@id/nav_widgets"
+        android:orderInCategory="28000"
+        android:title="@string/ui_widgets" />
+    <item
+        android:icon="@drawable/ic_help"
+        android:id="@id/nav_tutorials"
+        android:orderInCategory="32000"
+        android:title="@string/global_search_tutorials" />
+    <item
+        android:icon="@drawable/ic_community"
+        android:id="@id/nav_community"
+        android:orderInCategory="36000"
+        android:title="@string/global_search_communities" />
+    <item
+        android:icon="@drawable/ic_share"
+        android:id="@id/nav_share_app"
+        android:orderInCategory="40000"
+        android:title="@string/global_search_share_app" />
+    <item
+        android:icon="@drawable/ic_info_standard"
+        android:id="@id/nav_privacy_options"
+        android:visible="false"
+        android:orderInCategory="42000"
+        android:title="@string/privacy_choices" />
+    <item
+        android:icon="@drawable/ic_info"
+        android:id="@id/nav_about"
+        android:orderInCategory="44000"
+        android:title="@string/global_search_about" />
+</menu>

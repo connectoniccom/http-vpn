@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>Nein</item>
+        <item>Vollständig</item>
+        <item>Nur Downlink</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>Normal</item>
+        <item>Injektion am Anfang</item>
+        <item>Injektion am Ende</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>Kombinierter IPv4/IPv6 Tunnel</item>
+        <item>IPv4-nur Tunnel</item>
+        <item>Keine Präferenz</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>Schiefer</item>
+        <item>Rot</item>
+        <item>Rosa</item>
+        <item>Violett</item>
+        <item>Dunkelviolett</item>
+        <item>Indigo</item>
+        <item>Blau</item>
+        <item>Hellblau</item>
+        <item>Cyan</item>
+        <item>Blaugrün</item>
+        <item>Grün</item>
+        <item>Hellgrün</item>
+        <item>Bernstein</item>
+        <item>Orange</item>
+        <item>Dunkelorange</item>
+        <item>Braun</item>
+        <item>Blaugrau</item>
+        <item>Grau</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>Standard</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>Deaktiviert</item>
+        <item>Profil Standard</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>Standard</item>
+        <item>Firefox</item>
+        <item>Chrome</item>
+        <item>Opera Mini</item>
+        <item>Puffin</item>
+        <item>Safari</item>
+        <item>UC-Browser</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>V2Ray Standard</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>Adaptiv</item>
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+</resources>

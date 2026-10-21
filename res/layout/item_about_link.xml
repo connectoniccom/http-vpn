@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="58.0dip"
+    android:paddingStart="12.0dip"
+    android:paddingEnd="12.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/support_link_icon"
+        android:background="@drawable/bg_about_link_icon"
+        android:padding="8.0dip"
+        android:layout_width="34.0dip"
+        android:layout_height="34.0dip"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="13.0sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:id="@id/support_link_label"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginStart="12.0dip"
+        android:layout_marginEnd="10.0dip"
+        app:layout_constraintBottom_toTopOf="@id/support_link_value"
+        app:layout_constraintEnd_toStartOf="@id/support_link_open"
+        app:layout_constraintStart_toEndOf="@id/support_link_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_goneMarginEnd="8.0dip" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="11.0sp"
+        android:ellipsize="end"
+        android:id="@id/support_link_value"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dip"
+        android:maxLines="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/support_link_open"
+        app:layout_constraintStart_toStartOf="@id/support_link_label"
+        app:layout_constraintTop_toBottomOf="@id/support_link_label" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/support_link_open"
+        android:layout_width="18.0dip"
+        android:layout_height="18.0dip"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_open_external" />
+    <View
+        android:id="@id/support_link_divider"
+        android:layout_width="0.0dip"
+        android:layout_height="1.0dip"
+        android:alpha="0.12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/support_link_label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

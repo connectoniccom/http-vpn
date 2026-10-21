@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>否</item>
+        <item>满</item>
+        <item>仅下行</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>正常</item>
+        <item>前置注入</item>
+        <item>后置注入</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>组合 IPv4/IPv6 隧道</item>
+        <item>IPv4-仅限隧道</item>
+        <item>无偏好</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>岩灰</item>
+        <item>红色</item>
+        <item>粉色</item>
+        <item>紫色</item>
+        <item>深紫色</item>
+        <item>靛蓝</item>
+        <item>蓝色</item>
+        <item>浅蓝色</item>
+        <item>青色</item>
+        <item>蓝绿色</item>
+        <item>绿色</item>
+        <item>浅绿色</item>
+        <item>琥珀色</item>
+        <item>橙色</item>
+        <item>深橙色</item>
+        <item>棕色</item>
+        <item>蓝灰色</item>
+        <item>灰色</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>默认</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>已禁用</item>
+        <item>配置文件默认值</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>默认</item>
+        <item>Firefox</item>
+        <item>Chrome</item>
+        <item>Opera Mini</item>
+        <item>Puffin</item>
+        <item>Safari</item>
+        <item>UCBrowser</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>V2Ray 默认</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>自适应</item>
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+</resources>

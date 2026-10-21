@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="auto_reconnect_interval_hours">
+        <item quantity="other">%1$d ชั่วโมง</item>
+    </plurals>
+    <plurals name="auto_reconnect_interval_minutes">
+        <item quantity="other">%1$d นาที</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">%1$d วันที่ผ่านมา</item>
+    </plurals>
+    <plurals name="global_search_result_count">
+        <item quantity="other">ผลลัพธ์ %d</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%1$d ชั่วโมงที่แล้ว</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="other">%1$d นาทีที่แล้ว</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">การแจ้งเตือนใหม่ %d รายการ</item>
+        <item quantity="one">การแจ้งเตือนใหม่ %d รายการ</item>
+    </plurals>
+    <plurals name="settings_apps_filter_active_summary">
+        <item quantity="other">เปิดใช้งาน • โหมดฟิลเตอร์ • เลือกแอป %1$d แล้ว</item>
+    </plurals>
+    <plurals name="settings_apps_filter_bypass_summary">
+        <item quantity="other">เปิดใช้งาน • โหมดบายพาส • เลือกแอป %1$d แล้ว</item>
+    </plurals>
+    <plurals name="settings_reconnection_attempts_summary">
+        <item quantity="other">%1$d พยายาม</item>
+    </plurals>
+</resources>

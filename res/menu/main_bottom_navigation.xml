@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_nav_home"
+        android:id="@id/navigation_home"
+        android:title="@string/ui_home" />
+    <item
+        android:icon="@drawable/ic_nav_configs"
+        android:id="@id/navigation_configs"
+        android:title="@string/ui_configs" />
+    <item
+        android:icon="@drawable/ic_nav_logs"
+        android:id="@id/navigation_logs"
+        android:title="@string/log" />
+</menu>

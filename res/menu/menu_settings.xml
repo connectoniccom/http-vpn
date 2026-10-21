@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_magnifier"
+        android:id="@id/action_search"
+        android:title="@string/settings_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@id/action_backup_settings"
+        android:title="@string/settings_backup_menu"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_restore_settings"
+        android:title="@string/settings_restore_menu"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/action_reset_settings"
+        android:title="@string/settings_reset_menu"
+        app:showAsAction="never" />
+</menu>

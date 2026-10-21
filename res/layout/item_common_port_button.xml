@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton
+    android:textSize="12.0sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="0.0dip"
+    android:textAllCaps="false"
+    android:paddingStart="14.0dip"
+    android:paddingEnd="14.0dip"
+    android:layout_marginEnd="6.0dip"
+    app:cornerRadius="20.0dip"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/bg_widget_quick"
+    android:padding="8.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/widget_favorites_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="36.0dip">
+        <ImageView
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:src="@drawable/ic_favorite"
+            android:tint="#ffff3b30"
+            android:contentDescription="@null" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="@android:color/white"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/widget_favorites_title"
+            android:layout_weight="1.0"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="7.0dip" />
+        <ImageView
+            android:id="@id/widget_favorites_power"
+            android:padding="5.0dip"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:src="@drawable/ic_widget_power"
+            android:contentDescription="@string/widget_toggle_description" />
+    </LinearLayout>
+    <ListView
+        android:id="@id/widget_favorites_list"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:divider="#24ffffff"
+        android:dividerHeight="1.0dip"
+        android:layout_weight="1.0" />
+    <TextView
+        android:textSize="12.0sp"
+        android:textColor="#ccffffff"
+        android:gravity="center"
+        android:id="@id/widget_favorites_empty"
+        android:padding="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:text="@string/widget_favorites_empty"
+        android:layout_weight="1.0" />
+</LinearLayout>

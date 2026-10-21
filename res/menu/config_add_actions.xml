@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/config_add_create"
+        android:title="@string/ui_create_config" />
+    <item
+        android:id="@id/config_add_import"
+        android:title="@string/label_import_config" />
+    <item
+        android:id="@id/config_add_public"
+        android:title="@string/global_search_public_configs" />
+</menu>

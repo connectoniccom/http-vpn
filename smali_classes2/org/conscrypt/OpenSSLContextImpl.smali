@@ -1,0 +1,445 @@
+.class public abstract Lorg/conscrypt/OpenSSLContextImpl;
+.super Ljavax/net/ssl/SSLContextSpi;
+.source "r8-map-id-df5db90dcb5c78ccd8ea2ea117d69a1d14e0fa43368d596cb5da0ece7562d8ac"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/conscrypt/OpenSSLContextImpl$TLSv13;,
+        Lorg/conscrypt/OpenSSLContextImpl$TLSv1;,
+        Lorg/conscrypt/OpenSSLContextImpl$TLSv11;,
+        Lorg/conscrypt/OpenSSLContextImpl$TLSv12;
+    }
+.end annotation
+
+
+# static fields
+.field private static defaultSslContextImpl:Lorg/conscrypt/DefaultSSLContextImpl;
+
+
+# instance fields
+.field private final clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+
+.field private final protocols:[Ljava/lang/String;
+
+.field private final serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+
+.field sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+
+# direct methods
+.method public constructor <init>([Ljava/lang/String;)V
+    .registers 2
+
+    .line 84
+    invoke-direct {p0}, Ljavax/net/ssl/SSLContextSpi;-><init>()V
+
+    .line 85
+    iput-object p1, p0, Lorg/conscrypt/OpenSSLContextImpl;->protocols:[Ljava/lang/String;
+
+    .line 86
+    new-instance p1, Lorg/conscrypt/ClientSessionContext;
+
+    invoke-direct {p1}, Lorg/conscrypt/ClientSessionContext;-><init>()V
+
+    iput-object p1, p0, Lorg/conscrypt/OpenSSLContextImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+
+    .line 87
+    new-instance p1, Lorg/conscrypt/ServerSessionContext;
+
+    invoke-direct {p1}, Lorg/conscrypt/ServerSessionContext;-><init>()V
+
+    iput-object p1, p0, Lorg/conscrypt/OpenSSLContextImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+
+    return-void
+.end method
+
+.method public constructor <init>([Ljava/lang/String;Z)V
+    .registers 11
+
+    .line 1
+    invoke-direct {p0}, Ljavax/net/ssl/SSLContextSpi;-><init>()V
+
+    .line 4
+    const-class p2, Lorg/conscrypt/DefaultSSLContextImpl;
+
+    .line 6
+    monitor-enter p2
+
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    :try_start_0
+    iput-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->protocols:[Ljava/lang/String;
+
+    .line 10
+    sget-object v0, Lorg/conscrypt/OpenSSLContextImpl;->defaultSslContextImpl:Lorg/conscrypt/DefaultSSLContextImpl;
+
+    .line 12
+    if-nez v0, :cond_0
+
+    .line 14
+    new-instance v0, Lorg/conscrypt/ClientSessionContext;
+
+    .line 16
+    invoke-direct {v0}, Lorg/conscrypt/ClientSessionContext;-><init>()V
+
+    .line 19
+    iput-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+
+    .line 21
+    new-instance v0, Lorg/conscrypt/ServerSessionContext;
+
+    .line 23
+    invoke-direct {v0}, Lorg/conscrypt/ServerSessionContext;-><init>()V
+
+    .line 26
+    iput-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+
+    .line 28
+    move-object v0, p0
+
+    .line 29
+    check-cast v0, Lorg/conscrypt/DefaultSSLContextImpl;
+
+    .line 31
+    sput-object v0, Lorg/conscrypt/OpenSSLContextImpl;->defaultSslContextImpl:Lorg/conscrypt/DefaultSSLContextImpl;
+
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :catchall_0
+    move-exception v0
+
+    .line 35
+    move-object p0, v0
+
+    .line 36
+    goto :goto_1
+
+    .line 37
+    :cond_0
+    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLContextImpl;->engineGetClientSessionContext()Ljavax/net/ssl/SSLSessionContext;
+
+    .line 40
+    move-result-object v0
+
+    .line 41
+    check-cast v0, Lorg/conscrypt/ClientSessionContext;
+
+    .line 43
+    iput-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+
+    .line 45
+    sget-object v0, Lorg/conscrypt/OpenSSLContextImpl;->defaultSslContextImpl:Lorg/conscrypt/DefaultSSLContextImpl;
+
+    .line 47
+    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLContextImpl;->engineGetServerSessionContext()Ljavax/net/ssl/SSLSessionContext;
+
+    .line 50
+    move-result-object v0
+
+    .line 51
+    check-cast v0, Lorg/conscrypt/ServerSessionContext;
+
+    .line 53
+    iput-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+
+    .line 55
+    :goto_0
+    new-instance v1, Lorg/conscrypt/SSLParametersImpl;
+
+    .line 57
+    sget-object v0, Lorg/conscrypt/OpenSSLContextImpl;->defaultSslContextImpl:Lorg/conscrypt/DefaultSSLContextImpl;
+
+    .line 59
+    invoke-virtual {v0}, Lorg/conscrypt/DefaultSSLContextImpl;->getKeyManagers()[Ljavax/net/ssl/KeyManager;
+
+    .line 62
+    move-result-object v2
+
+    .line 63
+    sget-object v0, Lorg/conscrypt/OpenSSLContextImpl;->defaultSslContextImpl:Lorg/conscrypt/DefaultSSLContextImpl;
+
+    .line 65
+    invoke-virtual {v0}, Lorg/conscrypt/DefaultSSLContextImpl;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+    .line 68
+    move-result-object v3
+
+    .line 69
+    iget-object v5, p0, Lorg/conscrypt/OpenSSLContextImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+
+    .line 71
+    iget-object v6, p0, Lorg/conscrypt/OpenSSLContextImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+
+    .line 73
+    const/4 v4, 0x0
+
+    .line 74
+    move-object v7, p1
+
+    .line 75
+    invoke-direct/range {v1 .. v7}, Lorg/conscrypt/SSLParametersImpl;-><init>([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;Lorg/conscrypt/ClientSessionContext;Lorg/conscrypt/ServerSessionContext;[Ljava/lang/String;)V
+
+    .line 78
+    iput-object v1, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+    .line 80
+    monitor-exit p2
+
+    .line 81
+    return-void
+
+    .line 82
+    :goto_1
+    monitor-exit p2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 83
+    throw p0
+.end method
+
+.method public static getPreferred()Lorg/conscrypt/OpenSSLContextImpl;
+    .registers 1
+
+    .line 1
+    new-instance v0, Lorg/conscrypt/OpenSSLContextImpl$TLSv13;
+
+    .line 3
+    invoke-direct {v0}, Lorg/conscrypt/OpenSSLContextImpl$TLSv13;-><init>()V
+
+    .line 6
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public engineCreateSSLEngine()Ljavax/net/ssl/SSLEngine;
+    .registers 2
+
+    .line 32
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+    if-eqz p0, :cond_0
+
+    .line 33
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->clone()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lorg/conscrypt/SSLParametersImpl;
+
+    const/4 v0, 0x0
+
+    .line 34
+    invoke-virtual {p0, v0}, Lorg/conscrypt/SSLParametersImpl;->setUseClientMode(Z)V
+
+    .line 35
+    new-instance v0, Lorg/conscrypt/ConscryptEngine;
+
+    invoke-direct {v0, p0}, Lorg/conscrypt/ConscryptEngine;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
+
+    invoke-static {v0}, Lorg/conscrypt/Platform;->wrapEngine(Lorg/conscrypt/ConscryptEngine;)Ljavax/net/ssl/SSLEngine;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 36
+    :cond_0
+    const-string p0, "SSLContext is not initialized."
+
+    invoke-static {p0}, Lg;->g(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public engineCreateSSLEngine(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;
+    .registers 4
+
+    .line 1
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 5
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->clone()Ljava/lang/Object;
+
+    .line 8
+    move-result-object p0
+
+    .line 9
+    check-cast p0, Lorg/conscrypt/SSLParametersImpl;
+
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    invoke-virtual {p0, v0}, Lorg/conscrypt/SSLParametersImpl;->setUseClientMode(Z)V
+
+    .line 15
+    new-instance v0, Lorg/conscrypt/ConscryptEngine;
+
+    .line 17
+    invoke-direct {v0, p1, p2, p0}, Lorg/conscrypt/ConscryptEngine;-><init>(Ljava/lang/String;ILorg/conscrypt/SSLParametersImpl;)V
+
+    .line 20
+    invoke-static {v0}, Lorg/conscrypt/Platform;->wrapEngine(Lorg/conscrypt/ConscryptEngine;)Ljavax/net/ssl/SSLEngine;
+
+    .line 23
+    move-result-object p0
+
+    .line 24
+    return-object p0
+
+    .line 25
+    :cond_0
+    const-string p0, "SSLContext is not initialized."
+
+    .line 27
+    invoke-static {p0}, Lg;->g(Ljava/lang/String;)V
+
+    .line 30
+    const/4 p0, 0x0
+
+    .line 31
+    return-object p0
+.end method
+
+.method public engineGetClientSessionContext()Ljavax/net/ssl/SSLSessionContext;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public engineGetServerSessionContext()Ljavax/net/ssl/SSLSessionContext;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public engineGetServerSocketFactory()Ljavax/net/ssl/SSLServerSocketFactory;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 5
+    new-instance v0, Lorg/conscrypt/OpenSSLServerSocketFactoryImpl;
+
+    .line 7
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+    .line 9
+    invoke-direct {v0, p0}, Lorg/conscrypt/OpenSSLServerSocketFactoryImpl;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
+
+    .line 12
+    return-object v0
+
+    .line 13
+    :cond_0
+    const-string p0, "SSLContext is not initialized."
+
+    .line 15
+    invoke-static {p0}, Lg;->g(Ljava/lang/String;)V
+
+    .line 18
+    const/4 p0, 0x0
+
+    .line 19
+    return-object p0
+.end method
+
+.method public engineGetSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 5
+    new-instance v0, Lorg/conscrypt/OpenSSLSocketFactoryImpl;
+
+    .line 7
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+    .line 9
+    invoke-direct {v0, p0}, Lorg/conscrypt/OpenSSLSocketFactoryImpl;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
+
+    .line 12
+    invoke-static {v0}, Lorg/conscrypt/Platform;->wrapSocketFactoryIfNeeded(Lorg/conscrypt/OpenSSLSocketFactoryImpl;)Ljavax/net/ssl/SSLSocketFactory;
+
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+
+    .line 17
+    :cond_0
+    const-string p0, "SSLContext is not initialized."
+
+    .line 19
+    invoke-static {p0}, Lg;->g(Ljava/lang/String;)V
+
+    .line 22
+    const/4 p0, 0x0
+
+    .line 23
+    return-object p0
+.end method
+
+.method public engineInit([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    .registers 11
+
+    .line 1
+    new-instance v0, Lorg/conscrypt/SSLParametersImpl;
+
+    .line 3
+    iget-object v4, p0, Lorg/conscrypt/OpenSSLContextImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+
+    .line 5
+    iget-object v5, p0, Lorg/conscrypt/OpenSSLContextImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+
+    .line 7
+    iget-object v6, p0, Lorg/conscrypt/OpenSSLContextImpl;->protocols:[Ljava/lang/String;
+
+    .line 9
+    move-object v1, p1
+
+    .line 10
+    move-object v2, p2
+
+    .line 11
+    move-object v3, p3
+
+    .line 12
+    invoke-direct/range {v0 .. v6}, Lorg/conscrypt/SSLParametersImpl;-><init>([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;Lorg/conscrypt/ClientSessionContext;Lorg/conscrypt/ServerSessionContext;[Ljava/lang/String;)V
+
+    .line 15
+    iput-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+
+    .line 17
+    return-void
+.end method

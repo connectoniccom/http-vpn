@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_array">
+        <item>Не</item>
+        <item>Пурра</item>
+        <item>Танҳо истинод ба поён</item>
+    </string-array>
+    <string-array name="inject_methods_arrays">
+        <item>Муқаррарӣ</item>
+        <item>Воридкунӣ дар аввал</item>
+        <item>Воридкунӣ дар охир</item>
+    </string-array>
+    <string-array name="ipv6_array">
+        <item>Нақби якҷояи IPv4/IPv6</item>
+        <item>Танҳо нақби IPv4</item>
+        <item>Афзалият нест</item>
+    </string-array>
+    <string-array name="ovpnCategory">
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+    </string-array>
+    <string-array name="ovpnSshCategory">
+        <item>OpenVPN TCP &amp; SSH</item>
+        <item>OpenVPN TCP</item>
+        <item>OpenVPN UDP</item>
+        <item>SSH</item>
+    </string-array>
+    <string-array name="theme_color_names">
+        <item>Хокистарии сангӣ</item>
+        <item>Сурх</item>
+        <item>Гулобӣ</item>
+        <item>Бунафш</item>
+        <item>Бунафши тира</item>
+        <item>Нилӣ</item>
+        <item>Кабуд</item>
+        <item>Кабуди равшан</item>
+        <item>Осмонӣ</item>
+        <item>Кабуду сабз</item>
+        <item>Сабз</item>
+        <item>Сабзи равшан</item>
+        <item>Қаҳрабоӣ</item>
+        <item>Норанҷӣ</item>
+        <item>Норанҷии тира</item>
+        <item>Қаҳваранг</item>
+        <item>Кабуду хокистарӣ</item>
+        <item>Хокистарӣ</item>
+    </string-array>
+    <string-array name="tlsVersion">
+        <item>Пешфарз</item>
+        <item>TLSv1.1</item>
+        <item>TLSv1.2</item>
+        <item>TLSv1.3</item>
+    </string-array>
+    <string-array name="tls_version_min_override_array">
+        <item>Ғайрифаъол</item>
+        <item>Профили пешфарз</item>
+        <item>TLS 1.0</item>
+        <item>TLS 1.1</item>
+        <item>TLS 1.2</item>
+        <item>TLS 1.3</item>
+    </string-array>
+    <string-array name="userAgent">
+        <item>Пешфарз</item>
+        <item>Firefox</item>
+        <item>Chrome</item>
+        <item>Opera Mini</item>
+        <item>Паффин</item>
+        <item>Сафари</item>
+        <item>UCBrowser</item>
+    </string-array>
+    <string-array name="v2rayCategory">
+        <item>V2Ray пешфарз</item>
+        <item>VLESS</item>
+        <item>VMess</item>
+        <item>Shadowsocks</item>
+        <item>Socks</item>
+        <item>HTTP</item>
+        <item>Trojan</item>
+        <item>Hysteria2</item>
+        <item>WireGuard</item>
+    </string-array>
+    <string-array name="vpn_proto_array">
+        <item>Мутобиқшавӣ</item>
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+</resources>
